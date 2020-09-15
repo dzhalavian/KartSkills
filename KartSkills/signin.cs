@@ -29,5 +29,18 @@ namespace KartSkills
             // Скрываем текущее окно (форму) 
             Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if ((tb_email.Text == "admin") && (tb_password.Text == "123"))
+            {
+                MessageBox.Show("Вы авторизировались");
+            }
+            else
+            {
+                MessageBox.Show("пользователь не найден");
+            }
+        }
+        
     }
 }
